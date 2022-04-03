@@ -1,3 +1,86 @@
+/* цвет основного текста #212121 */
+/* вторичный цвет текста #757575 */
+/* белый #FFFFFF */
+/* акцент #2196F3 */
+/* вторичный цвет фона #2F303A */
+
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196f3;
+}
+
 body {
   background-color: #ffffff;
+  color: var(--primary-text-color);
 }
+
+.list {
+  list-style: none;
+}
+
+.logo {
+  color: var(--accent-color);
+}
+
+/*Site nav*/
+
+.site-nav .link {
+  color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/*Hero*/
+
+.hero-title {
+  color: var(--primary-text-color);
+}
+
+/*Button*/
+
+.button {
+  color: var(--primary-text-color);
+  background-color: #ffffff;
+}
+
+.button.primary {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+/*Section*/
+
+.section-title {
+  color: var(--primary-text-color);
+}
+
+/*Features*/
+
+.feature-list,
+.title {
+  color: var(--primary-text-color);
+}
+
+/*What are we doing*/
+
+.work-list,
+.title {
+  color: var(--primary-text-color);
+}
+
+/*Command-list*/
+
+.command-list,
+.title {
+  color: var(--primary-text-color);
+}
+
+/*Footer*/
