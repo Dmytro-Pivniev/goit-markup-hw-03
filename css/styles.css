@@ -23,18 +23,18 @@ body {
   color: var(--accent-color);
 }
 
-/*Site nav*/
+/*Header nav*/
 
-.site-nav .link {
+.header-nav-list .link {
   color: var(--primary-text-color);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.header-nav-list .link:hover,
+.header-nav-list .link:focus {
   color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.header-nav-list .link.current {
   color: var(--accent-color);
 }
 
