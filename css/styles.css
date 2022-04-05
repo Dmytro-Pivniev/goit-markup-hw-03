@@ -1,3 +1,5 @@
+/*Стили для index.html*/
+
 /* цвет основного текста #212121 */
 /* вторичный цвет текста #757575 */
 /* белый #FFFFFF */
@@ -8,10 +10,11 @@
   --primary-text-color: #212121;
   --title-text-color: #757575;
   --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--primary-white-color);
   color: var(--primary-text-color);
 }
 
@@ -38,33 +41,36 @@ body {
   color: var(--accent-color);
 }
 
+.header-contacts .link:hover,
+.header-contacts .link:focus {
+  color: var(--accent-color);
+}
+
 /*Hero*/
 
 .hero-title {
   color: var(--primary-text-color);
 }
 
-/*Button*/
+/*HeroButton*/
 
 .button {
   color: var(--primary-text-color);
-  background-color: #ffffff;
+  background-color: var(--primary-white-color);
 }
 
 .button.primary {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 
-/*Section*/
+/*Peculiarities*/
 
-.section-title {
+.peculiarities-title {
   color: var(--primary-text-color);
 }
 
-/*Features*/
-
-.feature-list,
+.peculiarities-list,
 .title {
   color: var(--primary-text-color);
 }
@@ -84,3 +90,10 @@ body {
 }
 
 /*Footer*/
+
+.footer-list .link:hover,
+.footer-list .link:focus {
+  color: var(--accent-color);
+}
+
+/*Стили для portfolio.html*/
