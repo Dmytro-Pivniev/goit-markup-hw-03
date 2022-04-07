@@ -289,6 +289,10 @@ body {
 
 /*--------------------------Стили для portfolio.html----------------*/
 
+.btn {
+  cursor: pointer;
+}
+
 .filter-list {
   font-style: normal;
   font-weight: 500;
