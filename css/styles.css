@@ -42,7 +42,19 @@ body {
 }
 
 /*-------------------------------Header site-----------------------*/
+.top-logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.12;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
 
+.header-logo {
+  color: var(--primary-text-color);
+}
 .header-nav-list .link {
   color: var(--primary-text-color);
 }
@@ -52,22 +64,44 @@ body {
   color: var(--accent-color);
 }
 
+.header-nav-item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
 .header-nav-list .link.current {
   color: var(--accent-color);
 }
 
-.logo {
-  font-family: 'Raleway';
+.header-email-first {
   font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--accent-color);
 }
 
-.header-logo {
-  color: var(--primary-text-color);
+.header-email-second {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.header-tel {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
 }
 
 .header-contacts .link:hover,
@@ -77,18 +111,37 @@ body {
 
 /*----------------------------------Hero----------------------------*/
 
+.hero {
+  background-color: var(--secondary-background-color);
+}
+
 .hero-title {
-  color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
 }
 
 /*HeroButton*/
 
 .button {
-  color: var(--primary-text-color);
   background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
 }
 
 .button.primary {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
@@ -96,9 +149,23 @@ body {
 /*----------------------------------Peculiarities-------------------*/
 
 .peculiarities-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.13;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--primary-text-color);
 }
 
+.peculiarities-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
 .peculiarities-list,
 .title {
   color: var(--primary-text-color);
@@ -106,22 +173,75 @@ body {
 
 /*----------------------------------What are we doing--------------*/
 
+.work-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
 .work-list,
 .title {
   color: var(--primary-text-color);
 }
 
 /*-------------------------------Command-list-----------------------*/
+.command {
+  background-color: #f5f4fa;
+}
+
+.command-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.name-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.12;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
 
 .command-list,
-.title {
+.name-title {
   color: var(--primary-text-color);
+}
+
+.speciality-user {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.12;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 
 /*--------------------------------Footer----------------------------*/
 
 .footer {
   background-color: var(--secondary-background-color);
+}
+
+.bottom-logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.12;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
 }
 
 .footer-logo {
@@ -133,4 +253,66 @@ body {
   color: var(--accent-color);
 }
 
+.footer-map {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+
+.footer-email {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-tel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 /*--------------------------Стили для portfolio.html----------------*/
+
+.filter-list {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+/*--------------------------Foto progects---------------------------------*/
+
+.progect-img-item {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.progect-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.progect-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
