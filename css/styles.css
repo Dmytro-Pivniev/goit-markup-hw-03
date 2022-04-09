@@ -126,14 +126,19 @@ body {
   color: var(--primary-white-color);
 }
 
-/*HeroButton*/
+/*-------------------------------HeroButton--------------------------*/
 
 .button {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
 }
 
+.top-btn {
+  cursor: default;
+}
+
 .button.primary {
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -149,7 +154,6 @@ body {
 /*----------------------------------Peculiarities-------------------*/
 
 .peculiarities-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.13;
@@ -159,8 +163,6 @@ body {
 }
 
 .peculiarities-desc {
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -174,7 +176,6 @@ body {
 /*----------------------------------What are we doing--------------*/
 
 .work-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -194,7 +195,6 @@ body {
 }
 
 .command-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -211,7 +211,6 @@ body {
 }
 
 .name-title {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.12;
@@ -226,7 +225,6 @@ body {
 }
 
 .speciality-user {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.12;
@@ -255,12 +253,20 @@ body {
   color: var(--primary-white-color);
 }
 
-.footer-list .link:hover,
-.footer-list .link:focus {
-  color: var(--accent-color);
+.footer-map {
+  cursor: default;
 }
 
-.footer-map {
+.footer-email {
+  cursor: default;
+}
+
+.footer-tel {
+  cursor: default;
+}
+
+.footer-list {
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -269,8 +275,20 @@ body {
   color: var(--primary-white-color);
 }
 
+.footer-list .link:hover,
+.footer-list .link:focus {
+  color: var(--accent-color);
+}
+
+.footer-map {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+
 .footer-email {
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -279,7 +297,6 @@ body {
 }
 
 .footer-tel {
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -294,7 +311,6 @@ body {
 }
 
 .filter-list {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -302,16 +318,13 @@ body {
   color: var(--primary-text-color);
 }
 
-/*--------------------------Foto progects---------------------------------*/
-
-.progect-img-item {
+.progect-image-items {
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
 
 .progect-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -320,7 +333,6 @@ body {
 }
 
 .progect-text {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
