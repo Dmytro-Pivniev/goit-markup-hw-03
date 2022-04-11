@@ -89,15 +89,7 @@ body {
   color: var(--accent-color);
 }
 
-.header-email-second {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--title-text-color);
-}
-
+.header-email-second,
 .header-tel {
   font-style: normal;
   font-weight: 500;
