@@ -58,50 +58,44 @@ body {
 .header-logo {
   color: var(--primary-text-color);
 }
-.header-nav-list .link {
+
+.header-nav-list,
+.link:hover,
+.header-nav-list,
+.link:focus {
   color: var(--primary-text-color);
 }
 
-.header-nav-list .link:hover,
-.header-nav-list .link:focus {
+.header-nav-item .link.current {
   color: var(--accent-color);
 }
 
-.header-nav-item {
+.header-nav-item > .link {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.header-contacts,
+.link:hover,
+.header-contacts,
+.link:focus {
   color: var(--accent-color);
 }
 
-.header-nav-list .link.current {
-  color: var(--accent-color);
-}
-
-.header-email-first {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
-}
-
+.header-email-first,
+.header-tel-first,
 .header-email-second,
-.header-tel {
+.header-tel-second {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-}
-
-.header-contacts .link:hover,
-.header-contacts .link:focus {
-  color: var(--accent-color);
 }
 
 /*----------------------------------Hero----------------------------*/
@@ -122,16 +116,6 @@ body {
 
 /*-------------------------------HeroButton--------------------------*/
 
-.button {
-  background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
-  cursor: pointer;
-}
-
-.top-btn {
-  cursor: default;
-}
-
 .button.primary {
   font-family: 'Roboto';
   font-style: normal;
@@ -139,6 +123,7 @@ body {
   font-size: 16px;
   line-height: 1.88;
   display: flex;
+  cursor: default;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -199,7 +184,7 @@ body {
 }
 
 .command-image {
-  background: #ffffff;
+  background: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -220,7 +205,6 @@ body {
 }
 
 .speciality-user {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.12;
   text-align: center;
@@ -251,8 +235,6 @@ body {
 .footer-list {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
@@ -291,8 +273,8 @@ body {
 }
 
 .progect-image-items {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
+  background: var(--primary-white-color);
+  border: 1px solid var(--section-background-color);
   box-sizing: border-box;
 }
 
@@ -305,7 +287,6 @@ body {
 }
 
 .progect-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
