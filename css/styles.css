@@ -59,14 +59,7 @@ body {
   color: var(--primary-text-color);
 }
 
-.header-nav-list,
-.link:hover,
-.header-nav-list,
-.link:focus {
-  color: var(--primary-text-color);
-}
-
-.header-nav-item .link.current {
+.header-nav-item > .link.current {
   color: var(--accent-color);
 }
 
@@ -116,14 +109,13 @@ body {
 
 /*-------------------------------HeroButton--------------------------*/
 
-.button.primary {
+.hero-button.primary {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   display: flex;
-  cursor: default;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -240,11 +232,6 @@ body {
   color: var(--primary-white-color);
 }
 
-.footer-list .link:hover,
-.footer-list .link:focus {
-  color: var(--accent-color);
-}
-
 .footer-map {
   font-size: 14px;
   line-height: 1.71;
@@ -271,6 +258,22 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+
+.portfolio-button.primary {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+.portfolio-button {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+/*-----------------------------------Foto progects----------------------------*/
 
 .progect-image-items {
   background: var(--primary-white-color);
