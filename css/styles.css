@@ -264,13 +264,20 @@ body {
   color: var(--primary-white-color);
 }
 
-.portfolio-button {
+.portfolio-button,
+.filter-title {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  border-radius: 4px;
+
+  width: 128px;
+  height: 38px;
+  left: 576px;
+  top: 174px;
 }
 
 /*-----------------------------------Foto progects----------------------------*/
