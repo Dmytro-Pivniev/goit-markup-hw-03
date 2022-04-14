@@ -59,17 +59,12 @@ body {
   color: var(--primary-text-color);
 }
 
-.header-nav-item,
-.link.current {
-  color: var(--primary-white-color);
+.header-nav-links > .link.current {
+  background-color: var(--primary-white-color);
+  color: var(--accent-color);
 }
 
-.header-nav-item > .link.current {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
-}
-
-.header-nav-item > .link {
+.header-nav-links > .link {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -266,6 +261,7 @@ body {
 
 .button,
 .link:hover,
+.button,
 .link:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
