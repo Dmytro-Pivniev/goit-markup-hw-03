@@ -59,8 +59,14 @@ body {
   color: var(--primary-text-color);
 }
 
-.header-nav-item > .link.current {
-  color: var(--accent-color);
+.header-nav-item,
+.link.current {
+  color: var(--primary-white-color);
+}
+
+.header-nav-item > .link.link.current {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
 
 .header-nav-item > .link {
@@ -253,14 +259,14 @@ body {
   color: var(--primary-text-color);
 }
 
-.button,
-.link:hover,
-.link:focus {
+.portfolio-button.primary {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
 
-.portfolio-button.primary {
+.button,
+.link:hover,
+.link:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
