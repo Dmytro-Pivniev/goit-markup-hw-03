@@ -64,7 +64,7 @@ body {
   color: var(--primary-white-color);
 }
 
-.header-nav-item > .link.link.current {
+.header-nav-item > .link.current {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
