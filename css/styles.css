@@ -135,9 +135,7 @@ body {
 }
 
 .peculiarities-desc {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 .peculiarities-list,
@@ -233,18 +231,14 @@ body {
 }
 
 .footer-map {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   cursor: default;
   color: var(--primary-white-color);
 }
 
 .footer-email,
 .footer-tel {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   cursor: default;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -257,6 +251,13 @@ body {
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+.button,
+.link:hover,
+.link:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
 
 .portfolio-button.primary {
