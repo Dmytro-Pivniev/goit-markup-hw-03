@@ -64,6 +64,12 @@ body {
   color: var(--accent-color);
 }
 
+.header-nav-links .link:hover,
+.header-nav-links .link:focus {
+  background-color: var(--primary-white-color);
+  color: var(--accent-color);
+}
+
 .header-nav-links > .link {
   font-style: normal;
   font-weight: 500;
@@ -73,10 +79,9 @@ body {
   color: var(--primary-text-color);
 }
 
-.header-contacts,
-.link:hover,
-.header-contacts,
-.link:focus {
+.header-contacts .link:hover,
+.header-contacts .link:focus {
+  background-color: var(--primary-white-color);
   color: var(--accent-color);
 }
 
@@ -237,11 +242,25 @@ body {
   color: var(--primary-white-color);
 }
 
+.footer-map .link:hover,
+.footer-map .link:focus {
+  background-color: var(--secondary-background-color);
+  color: var(--accent-color);
+}
+
 .footer-email,
 .footer-tel {
   line-height: 1.71;
   cursor: default;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-email .link:hover,
+.footer-email .link:focus,
+.footer-tel .link:hover,
+.footer-tel .link:focus {
+  background-color: var(--secondary-background-color);
+  color: var(--accent-color);
 }
 
 /*--------------------------Стили для portfolio.html----------------*/
