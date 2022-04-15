@@ -23,12 +23,32 @@ body {
   letter-spacing: 0.03em;
 }
 
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 .link {
   text-decoration: none;
 }
 
 .list {
   list-style: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
 }
 
 .visually-hidden {
@@ -45,6 +65,12 @@ body {
 }
 
 /*-------------------------------Header site-----------------------*/
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .top-logo {
   font-family: 'Raleway';
   font-style: normal;
@@ -101,6 +127,8 @@ body {
 
 .hero {
   background-color: var(--secondary-background-color);
+  padding-top: 200px;
+  padding-bottom: 280px;
 }
 
 .hero-title {
@@ -111,6 +139,10 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 696px;
 }
 
 /*-------------------------------HeroButton--------------------------*/
@@ -127,6 +159,8 @@ body {
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+
+  margin: 0 auto;
 }
 
 /*----------------------------------Peculiarities-------------------*/
@@ -138,11 +172,16 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
+
+  margin-bottom: 10px;
+  padding-top: 94px;
 }
 
 .peculiarities-desc {
   line-height: 1.71;
   color: var(--title-text-color);
+
+  padding-bottom: 94px;
 }
 .peculiarities-list,
 .title {
@@ -158,11 +197,17 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+
+  margin-bottom: 50px;
 }
 
 .work-list,
 .title {
   color: var(--primary-text-color);
+}
+
+.work-list {
+  margin-bottom: 188px;
 }
 
 /*-------------------------------Command-list-----------------------*/
@@ -177,6 +222,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+
+  margin-bottom: 50px;
+  padding-top: 94px;
 }
 
 .command-image {
@@ -193,11 +241,17 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .command-list,
 .name-title {
   color: var(--primary-text-color);
+}
+.command-list {
+  padding-bottom: 94px;
 }
 
 .speciality-user {
@@ -206,12 +260,16 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+
+  margin-bottom: 30px;
 }
 
 /*--------------------------------Footer----------------------------*/
 
 .footer {
   background-color: var(--secondary-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .bottom-logo {
@@ -234,12 +292,16 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
+
+  margin-top: 20px;
 }
 
 .footer-map {
   line-height: 1.71;
   cursor: default;
   color: var(--primary-white-color);
+
+  margin-bottom: 9px;
 }
 
 .footer-map .link:hover,
@@ -253,6 +315,8 @@ body {
   line-height: 1.71;
   cursor: default;
   color: rgba(255, 255, 255, 0.6);
+
+  margin-bottom: 9px;
 }
 
 .footer-email .link:hover,
