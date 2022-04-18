@@ -452,13 +452,20 @@ ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  padding-bottom: 94px;
 }
 
-.progect-image-items {
+.progect-img-item {
+  width: 370px;
+  height: 404px;
+  left: 215px;
+  top: 262px;
+  background: var(--primary-white-color);
   border: 1px solid var(--section-background-color);
   box-sizing: border-box;
-  background: var(--primary-white-color);
-  padding-bottom: 94px;
+
+  margin-bottom: 20px;
 }
 
 .progect-title {
@@ -467,8 +474,8 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
-  margin-top: 20px;
-  margin-bottom: 4px;
+
+  margin: 20px 24px 4px 24px;
 }
 
 .progect-text {
@@ -476,5 +483,6 @@ ul {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-bottom: 20px;
+
+  margin: 4px 24px 20px 24px;
 }
