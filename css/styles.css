@@ -447,13 +447,12 @@ ul {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  width: 130px;
+  height: 38px;
+  left: 976px;
+  top: 174px;
   background: var(--section-background-color);
   border-radius: 4px;
-
-  width: 128px;
-  height: 38px;
-  left: 576px;
-  top: 174px;
 }
 
 /*-----------------------------------Foto progects----------------------------*/
