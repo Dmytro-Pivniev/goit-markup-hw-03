@@ -48,7 +48,6 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 
 .visually-hidden {
@@ -71,6 +70,15 @@ ul {
   padding-bottom: 24px;
 }
 
+.header-container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
 .top-logo {
   font-family: 'Raleway';
   font-style: normal;
@@ -79,10 +87,20 @@ ul {
   line-height: 1.12;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header-logo {
   color: var(--primary-text-color);
+}
+
+.header-nav-list {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-nav-links > .link.current {
@@ -105,10 +123,28 @@ ul {
   color: var(--primary-text-color);
 }
 
+.header-nav-links:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-connect {
+  margin-left: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-contacts {
+  display: flex;
+}
+
 .header-contacts .link:hover,
 .header-contacts .link:focus {
   background-color: var(--primary-white-color);
   color: var(--accent-color);
+}
+
+.header-email-first {
+  margin-right: 50px;
 }
 
 .header-email-first,
@@ -151,12 +187,17 @@ ul {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
+  min-width: 200px;
+  height: 50px;
   font-size: 16px;
   line-height: 1.88;
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
   letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 
@@ -164,6 +205,14 @@ ul {
 }
 
 /*----------------------------------Peculiarities-------------------*/
+
+.peculiarities-list {
+  display: flex;
+}
+
+.peculiarities-items:not(:last-child) {
+  margin-right: 30px;
+}
 
 .peculiarities-title {
   font-weight: 700;
@@ -190,6 +239,10 @@ ul {
 
 /*----------------------------------What are we doing--------------*/
 
+.work-list {
+  display: flex;
+}
+
 .work-title {
   font-weight: 700;
   font-size: 36px;
@@ -207,7 +260,11 @@ ul {
 }
 
 .work-list {
-  margin-bottom: 188px;
+  padding-bottom: 94px;
+}
+
+.work-image:not(:last-child) {
+  margin-right: 30px;
 }
 
 /*-------------------------------Command-list-----------------------*/
@@ -225,6 +282,14 @@ ul {
 
   margin-bottom: 50px;
   padding-top: 94px;
+}
+
+.command-list {
+  display: flex;
+}
+
+.command-image:not(:last-child) {
+  margin-right: 30px;
 }
 
 .command-image {
@@ -330,14 +395,30 @@ ul {
 /*--------------------------Стили для portfolio.html----------------*/
 
 .filter-list {
+  display: flex;
+  justify-content: center;
+}
+
+.filter-list {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  padding-top: 94px;
+}
+
+.filter-btn {
+  margin-left: 8px;
+  margin-bottom: 34px;
 }
 
 .portfolio-button.primary {
+  max-width: 73px;
+  height: 38px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
@@ -356,6 +437,7 @@ ul {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  background: var(--section-background-color);
   border-radius: 4px;
 
   width: 128px;
@@ -367,9 +449,16 @@ ul {
 /*-----------------------------------Foto progects----------------------------*/
 
 .progect-image-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.progect-image-items {
   border: 1px solid var(--section-background-color);
   box-sizing: border-box;
   background: var(--primary-white-color);
+  padding-bottom: 94px;
 }
 
 .progect-title {
@@ -378,6 +467,8 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 
 .progect-text {
@@ -385,4 +476,5 @@ ul {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 20px;
 }
