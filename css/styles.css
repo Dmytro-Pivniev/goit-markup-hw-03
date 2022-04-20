@@ -44,10 +44,11 @@ ul {
 }
 
 .container {
-  width: 1200px;
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  outline: 2px solid red;
 }
 
 .visually-hidden {
@@ -66,15 +67,11 @@ ul {
 /*-------------------------------Header site-----------------------*/
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  height: 80px;
+  border-bottom: 1px solid #ececec;
 }
 
-.header-container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+.header .container {
   display: flex;
   align-items: center;
 }
@@ -99,8 +96,7 @@ ul {
 
 .header-nav-list {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-left: auto;
 }
 
 .header-nav-links > .link.current {
@@ -121,20 +117,18 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-nav-links:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-connect {
-  margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .header-contacts {
   display: flex;
+  margin-left: auto;
 }
 
 .header-contacts .link:hover,
@@ -157,16 +151,9 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-}
 
-.top-line {
-  position: absolute;
-  width: 1600px;
-  height: 0px;
-  left: 0px;
-  top: 80px;
-
-  border: 1px solid var(--section-background-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /*----------------------------------Hero----------------------------*/
@@ -174,7 +161,7 @@ ul {
 .hero {
   background-color: var(--secondary-background-color);
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -208,6 +195,7 @@ ul {
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 
@@ -429,6 +417,7 @@ ul {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  border: none;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
@@ -453,6 +442,7 @@ ul {
   top: 174px;
   background: var(--section-background-color);
   border-radius: 4px;
+  border: none;
 }
 
 /*-----------------------------------Foto progects----------------------------*/
