@@ -13,6 +13,7 @@
   --primary-white-color: #ffffff;
   --secondary-background-color: #2f303a;
   --section-background-color: #f5f4fa;
+  --border-color: #eeeeee;
 }
 
 body {
@@ -33,6 +34,12 @@ h3 {
 ul {
   padding: 0;
   margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -68,7 +75,7 @@ ul {
 
 .header {
   height: 80px;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .header .container {
@@ -203,13 +210,13 @@ ul {
 }
 
 /*----------------------------------Peculiarities-------------------*/
+.global-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .peculiarities-list {
   display: flex;
-}
-
-.peculiarities-items:not(:last-child) {
-  margin-right: 30px;
 }
 
 .peculiarities-title {
@@ -221,14 +228,14 @@ ul {
   color: var(--primary-text-color);
 
   margin-bottom: 10px;
-  padding-top: 94px;
 }
 
 .peculiarities-desc {
   line-height: 1.71;
   color: var(--title-text-color);
 
-  padding-bottom: 94px;
+  margin-right: 30px;
+  margin-bottom: 94px;
 }
 .peculiarities-list,
 .title {
@@ -239,6 +246,8 @@ ul {
 
 .work-list {
   display: flex;
+  justify-content: center;
+  margin-bottom: 188px;
 }
 
 .work-title {
@@ -257,10 +266,6 @@ ul {
   color: var(--primary-text-color);
 }
 
-.work-list {
-  padding-bottom: 94px;
-}
-
 .work-image:not(:last-child) {
   margin-right: 30px;
 }
@@ -268,6 +273,11 @@ ul {
 /*-------------------------------Command-list-----------------------*/
 .command {
   background-color: var(--section-background-color);
+}
+
+.command-list,
+.name-title {
+  color: var(--primary-text-color);
 }
 
 .command-title {
@@ -279,11 +289,14 @@ ul {
   color: var(--primary-text-color);
 
   margin-bottom: 50px;
-  padding-top: 94px;
 }
 
 .command-list {
   display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
 }
 
 .command-image:not(:last-child) {
@@ -307,14 +320,6 @@ ul {
 
   margin-top: 30px;
   margin-bottom: 10px;
-}
-
-.command-list,
-.name-title {
-  color: var(--primary-text-color);
-}
-.command-list {
-  padding-bottom: 94px;
 }
 
 .speciality-user {
@@ -349,14 +354,16 @@ ul {
   color: var(--primary-white-color);
 }
 
+.footer-address {
+  margin-top: 20px;
+}
+
 .footer-list {
   font-family: 'Roboto';
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
-
-  margin-top: 20px;
 }
 
 .footer-map {
@@ -382,6 +389,10 @@ ul {
   margin-bottom: 9px;
 }
 
+.footer-tel {
+  margin-bottom: 0;
+}
+
 .footer-email .link:hover,
 .footer-email .link:focus,
 .footer-tel .link:hover,
@@ -392,9 +403,15 @@ ul {
 
 /*--------------------------Стили для portfolio.html----------------*/
 
+.filters-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .filter-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filter-list {
@@ -403,12 +420,10 @@ ul {
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  padding-top: 94px;
 }
 
 .filter-btn {
   margin-left: 8px;
-  margin-bottom: 34px;
 }
 
 .portfolio-button.primary {
@@ -446,25 +461,26 @@ ul {
 }
 
 /*-----------------------------------Foto progects----------------------------*/
-
 .progect-image-items {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-
-  padding-bottom: 94px;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .progect-img-item {
-  width: 370px;
-  height: 404px;
-  left: 215px;
-  top: 262px;
   background: var(--primary-white-color);
-  border: 1px solid var(--section-background-color);
-  box-sizing: border-box;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
 
-  margin-bottom: 20px;
+.progect-title-text {
+  width: 370px;
+  padding: 20px 24px 20px 24px;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .progect-title {
@@ -474,7 +490,7 @@ ul {
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
 
-  margin: 20px 24px 2px 24px;
+  margin-bottom: 4px;
 }
 
 .progect-text {
@@ -482,6 +498,4 @@ ul {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-
-  margin: 2px 24px 20px 24px;
 }
